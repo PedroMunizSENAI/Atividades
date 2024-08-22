@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- HTML tag pai de todos -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <!-- BODY tag pai -->
+  <body>
+    <!-- MAIN tag filho do BODY -->
+    <main>
+      <!-- H1 filho do MAIN -->
+      <h1>Titulo da main</h1>
+      <!-- P filho do MAIN -->
+      <p>
+        O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
+        O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias
+        desde o ano de 1500, quando uma misturou os caracteres de um texto para
+        criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas
+        também o salto para a tipografia electrónica, mantendo-se essencialmente
+        inalterada. Foi popularizada nos anos 60 com a disponibilização das
+        folhas de Letraset, que continham passagens com Lorem Ipsum, e mais
+        recentemente com os programas de publicação como o Aldus PageMaker que
+        incluem versões do Lorem Ipsum.
+      </p>
+      <!-- ASIDE filho do MAIN -->
+      <aside>
+        <!-- NAV filho do ASIDE -->
+        <nav>
+          <!-- UL filho do NAV -->
+          <ul>
+            <!-- LI filho do UL -->
+            <li>
+              <!-- A filho do LI -->
+              <a href="#"
+                >Primeiro link para ajuda referente ao assunto principal.</a
+              >
+            </li>
+
+            <!-- LI filho do UL -->
+            <li>
+              <!-- A filho do LI -->
+              <a href="#"
+                >Segundo link para ajuda referente ao assunto principal.</a
+              >
+            </li>
+
+            <!-- LI filho do UL -->
+            <li>
+              <!-- A filho do LI -->
+              <a href="#"
+                >Terceiro link para ajuda referente ao assunto principal.</a
+              >
+            </li>
+
+            <!-- LI filho do UL -->
+            <li>
+              <!-- A filho do LI -->
+              <a href="#"
+                >Quarto link para ajuda referente ao assunto principal.</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
+
+    <!-- SECTION filho do BODY -->
+    <section>
+      <!-- SECTION filho do SECTION -->
+      <section>
+        <!-- H2 filho do SECTION -->
+        <h2>Sobre Nós</h2>
+        <!-- P filho do SECTION -->
+        <p>
+          Somos uma empresa dedicada a fornecer soluções inovadoras para nossos
+          clientes. Com uma equipe experiente e apaixonada, trabalhamos para
+          oferecer produtos e serviços de alta qualidade que atendam às
+          necessidades do mercado atual.
+        </p>
+        <!-- UL filho do SECTION -->
+        <ul>
+          <!-- LI filho do UL -->
+          <li>Compromisso com a excelência</li>
+          <!-- LI filho do UL -->
+          <li>Foco no cliente</li>
+          <!-- LI filho do UL -->
+          <li>Inovação contínua</li>
+        </ul>
+        <!-- P filho do SECTION -->
+        <p>
+          Nosso objetivo é construir parcerias duradouras e ajudar nossos
+          clientes a alcançar o sucesso em seus negócios.
+        </p>
+      </section>
+    </section>
+  </body>
+</html>
