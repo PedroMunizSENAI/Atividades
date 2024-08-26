@@ -4,47 +4,227 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Titulo do site barra de guias-->
+    <!--Titulo do site na barra de guias-->
     <title>Guia do Valorant</title>
-    <!--Imagem do site barra de guias-->
+    <!--Imagem do site na barra de guias-->
     <link
       rel="icon"
       type="image/x-icon"
-      href="./imagens/Logo-GuiaValorant.png"
+      href="/site-valorant/imagens/Logo-GuiaValorant.png"
     />
-    <link rel="stylesheet" href="./GuiaValorantTESTE.CSS" />
-    <!-- Mudar fonte do Main -->
-    <style>
-      main {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-      }
-    </style>
+    <link rel="stylesheet" href="GuiaValorantTESTE.CSS" />
   </head>
-  <body>
-    <section class="cor"></section>
+  <!-- Corpo do site -->
+  <body style="background-color: whitesmoke">
     <!-- Cabeçalho do Site -->
-    <header>
-      <h1 align="center" style="color: whitesmoke; font-size: 42px">GUIA DO</h1>
-      <!--Tag para colocar imagem-->
+    <header style="background-color: #0f1922">
+      <div class="container"></div>
+      <!-- Tag para navegação do site -->
+      <nav style="color: whitesmoke">
+        <ul>
+          <li><a href="#Int">Introdução</a></li>
+          <li><a>|</a></li>
+          <li><a href="#Duel">Duelista</a></li>
+          <li><a href="#Inic">Inicializador</a></li>
+          <li><a href="#Contr">Controlador</a></li>
+          <li><a href="#Senti">Sentinela</a></li>
+          <li><a>|</a></li>
+          <li><a href="#Menu">Suporte</a></li>
+        </ul>
+      </nav>
+      <!--Tag para colocar e alinhar imagem-->
       <figure>
-        <div align="center">
-          <img src="./imagens/Logo-Valorant.png" height="55" width="340" />
-        </div>
+        <img
+          src="/site-valorant/imagens/Logo-GuiaValorantFODAO.png"
+          width="1300"
+          height="1300"
+          alt=""
+        />
       </figure>
     </header>
-    <!--Conteudo principal do texto-->
+    <!--Conteudo de texto do site-->
     <main>
-      <article>
-        <h3 align="left" style="color: whitesmoke; font-size: 25px">
-          Valorant é um jogo de tiro tático em primeira pessoa desenvolvido pela
-          Riot Games. Lançado em 2020. <br />
-          o jogo combina elementos de jogos de tiro tradicionais com habilidades
-          únicas de personagens, criando uma mistura estratégica e dinâmica.
-        </h3>
+      <!--  Subtítulo -->
+      <h2
+        id="Int"
+        align="center"
+        style="background-color: #0f1922; color: whitesmoke; font-size: 25px"
+      >
+        Introdução
+      </h2>
+      <!-- Conteúdo do subtítulo -->
+      <article style="color: #0f1922; font-size: 25px">
+        <p>
+          <strong>Valorant</strong> é um jogo de tiro tático em primeira pessoa
+          desenvolvido pela Riot Games. Lançado em 2020. o jogo combina
+          elementos de jogos de tiro tradicionais com habilidades únicas de cada
+          classes de agentes, criando uma experiência única e individual para
+          cada jogador. <br />
+          <strong>As classes de agentes</strong> organizam os agentes em
+          categorias baseadas em seus papéis e habilidades dentro do jogo. Cada
+          classe tem uma função específica que contribui para a estratégia da
+          equipe. Atualmente temos quatro classes de agentes, sobre as quais nós
+          vamos apresentá-las hoje.
+        </p>
+        <br />
+      </article>
+      <!-- Subtítulo -->
+      <h2
+        id="Duel"
+        align="center"
+        style="background-color: #0f1922; color: whitesmoke; font-size: 25px"
+      >
+        Duelistas
+      </h2>
+      <!-- Conteúdo do subtítulo -->
+      <article style="color: #0f1922; font-size: 25px">
+        <p>
+          A classe de <strong>Duelistas</strong> no Valorant são a classe de
+          agentes focada em combate direto e agressivo. Projetados para liderar
+          a ofensiva, eles têm habilidades que facilitam confrontos individuais,
+          eliminando inimigos rapidamente e abrindo caminho para sua equipe.
+          <br />
+          Duelistas como:
+          <strong>Jett, Phoenix, Raze, Reyna, Yoru e Iso</strong> possuem
+          habilidades que permitem alta mobilidade, auto-suficiência, e
+          capacidade de causar dano explosivo. Eles são ideais para jogadores
+          que preferem um estilo de jogo ativo e envolvente, buscando dominar o
+          campo de batalha com habilidades ofensivas.
+        </p>
+        <!-- Incorporar video youtube -->
+        <iframe
+          width="500"
+          height="500"
+          src="https://www.youtube.com/embed/s2VbD_nNwFM?si=Pl2iIJGsYBXQIKfH"
+          title="Guia Duelista"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <!-- Subtítulo -->
+      <h2
+        id="Inic"
+        align="center"
+        style="background-color: #0f1922; color: whitesmoke; font-size: 25px"
+      >
+        Inicializadores
+      </h2>
+      <!-- Conteúdo do subtítulo -->
+      <article style="color: #0f1922; font-size: 25px">
+        <p>
+          A classe de <strong>Iniciadores</strong> no Valorant são a classe de
+          agentes projetada para abrir caminho para sua equipe, criando
+          oportunidades de ataque e desestabilizando o time inimigo. Esses
+          agentes utilizam habilidades que forçam os adversários a se
+          reposicionarem, revelam a localização dos inimigos ou os cegam
+          momentaneamente, permitindo que sua equipe avance com vantagem. <br />
+          Exemplos de Iniciadores incluem:
+          <strong>Sova, Skye, Breach, KAY/O, Fade e Gekko</strong> que possuem
+          ferramentas para sondar áreas, quebrar defesas e iniciar confrontos.
+          Eles são essenciais para coordenar ataques bem-sucedidos e garantir
+          que a equipe possa pressionar o adversário de maneira eficaz.
+        </p>
+        <!-- Incorporar video youtube -->
+        <iframe
+          width="500"
+          height="500"
+          src="https://www.youtube.com/embed/GSUr_8Z2TCo?si=jomajRpgf6lraMnn"
+          title="Guia Inicializador"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <!-- Subtítulo -->
+      <h2
+        id="Contr"
+        align="center"
+        style="background-color: #0f1922; color: whitesmoke; font-size: 25px"
+      >
+        Controladores
+      </h2>
+      <!-- Conteúdo do subtítulo -->
+      <article style="color: #0f1922; font-size: 25px">
+        <p>
+          A classe de <strong>Controladores</strong> no Valorant são a classe de
+          agentes especializada em manipular o campo de batalha para dar
+          vantagem à sua equipe. Esses agentes utilizam habilidades que
+          bloqueiam a visão, controlam o espaço e forçam os inimigos a se
+          reposicionarem. <br />
+          Controladores como:
+          <strong>Brimstone, Viper, Omen, Astra, Harbor e Clove</strong> são
+          mestres em criar barreiras, como fumaças e paredes, que dificultam o
+          avanço do adversário ou protegem áreas estratégicas. Eles são
+          fundamentais para definir o ritmo da partida, garantindo que a equipe
+          tenha o domínio territorial necessário para executar suas estratégias.
+        </p>
+        <!-- Incorporar video youtube -->
+        <iframe
+          width="500"
+          height="500"
+          src="https://www.youtube.com/embed/tuDyNBQVnQ0?si=a-YgsDM1tw40cjvi"
+          title="Guia Controlador"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <!-- Subtítulo -->
+      <h2
+        id="Senti"
+        align="center"
+        style="background-color: #0f1922; color: whitesmoke; font-size: 25px"
+      >
+        Sentinelas
+      </h2>
+      <!-- Conteúdo do subtítulo -->
+      <article style="color: #0f1922; font-size: 25px">
+        <p>
+          A classe de <strong>Sentinelas</strong> no Valorant são a classe de
+          agentes focada em defesa e suporte, desempenhando um papel crucial na
+          proteção da equipe e do território. Esses agentes são especialistas em
+          bloquear avanços inimigos, fornecer informações sobre a localização
+          adversária e curar ou fortalecer seus companheiros. <br />
+          Sentinelas como:
+          <strong>Cypher, Killjoy, Chamber e Deadlock</strong> possuem
+          habilidades que permitem controlar áreas-chave do mapa, colocando
+          armadilhas, câmeras, e barreiras, ou oferecendo cura e ressurreição.
+          Eles são fundamentais para manter a segurança da equipe, de uma área
+          do mapa e garantir que os objetivos sejam defendidos com eficiência.
+        </p>
+        <!-- Incorporar video youtube -->
+        <iframe
+          width="500"
+          height="500"
+          src="https://www.youtube.com/embed/5CA1DeOaIc0?si=0rw4rsJXAf_iThHE"
+          title="Guia Sentinela"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <!-- Tag para pular linha -->
+        <br />
       </article>
     </main>
+    <!-- Rodapé do site -->
+    <footer style="background-color: #0f1922" id="Menu">
+      <p>
+        <a
+          href="https://playvalorant.com/pt-br/download/"
+          style="color: whitesmoke"
+          >JOGUE AGORA!</a
+        >
+      </p>
+      <p>
+        <a href="https://github.com/PedroMunizSENAI" style="color: whitesmoke"
+          >CONTATO</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
