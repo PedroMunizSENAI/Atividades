@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Formulario" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form action="/roles" method="get"></form>
+    <h2>Cadastro</h2>
+    <!-- Nome -->
+    <label for="nome"></label>
+    <input
+      type="text"
+      name="nome"
+      id="nome"
+      placeholder="Digite seu nome"
+      required
+    />
+    <!-- Sobrenome -->
+    <label for="sobrenome"></label>
+    <input
+      type="text"
+      name="sobrenome"
+      id="sobrenome"
+      placeholder="Digite seu sobrenome"
+      required
+    />
+
+    <br />
+    <br />
+
+    <!-- Nickname -->
+    <label for="nickname"></label>
+    <input
+      type="text"
+      name="nickname"
+      id="nickname"
+      placeholder="Digite seu apelido/nickname"
+      required
+    />
+
+    <!-- Email -->
+    <label for="email"></label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Digite seu email"
+      required
+    />
+
+    <br />
+    <br />
+
+    <!-- Senha -->
+    <label for="password"></label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Digite sua senha"
+      required
+    />
+
+    <!-- Confirme a senha -->
+    <label for="confirmpassword"></label>
+    <input
+      type="password"
+      name="confirmpassword"
+      id="confirmpassword"
+      placeholder="Confirme sua senha"
+      required
+    />
+
+    <br />
+    <br />
+
+    <!-- Botão Cadastre-se -->
+    <input type="submit" value="Cadastre-se" />
+
+    <h2>Página de Contato</h2>
+    <fieldset>
+      <legend>Contato</legend>
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        name="contactnome"
+        id="contactnome"
+        placeholder="Digite seu nome"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="email">E-mail: </label>
+      <input
+        type="email"
+        name="contactemail"
+        id="contactemail"
+        placeholder="Digite seu email"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="tel">Telefone: </label>
+      <input
+        type="tel"
+        name="contacttel"
+        id="contacttel"
+        placeholder="Digite seu telefone"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="mensagm">Mensagem: </label>
+      <textarea
+        name="contacttext"
+        id="contacttext"
+        cols="50"
+        rows="10"
+        placeholder="Digite a mensagem para contato"
+      ></textarea>
+    </fieldset>
+  </body>
+</html>

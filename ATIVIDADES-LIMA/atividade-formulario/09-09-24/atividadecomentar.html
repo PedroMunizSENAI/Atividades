@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <!-- Início do formulário -->
+    <form action="#" method="get">
+      <!-- O formulário está sendo enviado com o método GET, o que significa que os dados serão enviados na URL.
+           O atributo action="#" indica que o formulário será enviado para a mesma página. -->
+
+      <!-- Campo de texto para nome -->
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Digite seu nome"
+        required
+      />
+      <!-- 
+        <label for="nome">: O rótulo associa o campo "nome" ao input que tem o id="nome". 
+        <input type="text">: Um campo de texto simples. 
+        Atributos:
+          - name="nome": Nome do campo, que será enviado no formulário.
+          - id="nome": Identificador único para este campo, utilizado pelo label e scripts.
+          - placeholder="Digite seu nome": Texto de dica que aparece dentro do campo até que o usuário digite algo.
+          - required: Indica que o campo é obrigatório. 
+      -->
+
+      <br /><br />
+
+      <!-- Campo de texto para email -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email"
+        required
+      />
+      <!-- 
+        <input type="email">: Campo específico para entrada de emails, validando o formato automaticamente.
+        Atributos:
+          - name="email": Nome do campo.
+          - id="email": Identificador único.
+          - placeholder="Digite seu email": Dica de preenchimento.
+          - required: Torna o campo obrigatório.
+      -->
+
+      <br /><br />
+
+      <!-- Campo de senha -->
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="password" />
+      <!-- 
+        <input type="password">: Campo para entrada de senha, o que esconde os caracteres digitados.
+        Atributos:
+          - name="password": Nome do campo.
+          - id="password": Identificador único.
+      -->
+
+      <br /><br />
+
+      <!-- Campo para idade -->
+      <label for="idade">Idade:</label>
+      <input type="number" name="idade" id="idade" min="18" max="60" />
+      <!-- 
+        <input type="number">: Campo numérico para entrada de números inteiros.
+        Atributos:
+          - name="idade": Nome do campo.
+          - id="idade": Identificador único.
+          - min="18": Valor mínimo permitido.
+          - max="60": Valor máximo permitido.
+      -->
+
+      <br /><br />
+
+      <!-- Campo para upload de imagem de perfil -->
+      <label for="imgPerfil">Imagem Perfil:</label>
+      <input type="file" name="imgPerfil" id="imgPerfil" />
+      <!-- 
+        <input type="file">: Campo para fazer upload de arquivos (neste caso, uma imagem).
+        Atributos:
+          - name="imgPerfil": Nome do campo.
+          - id="imgPerfil": Identificador único.
+      -->
+
+      <br /><br />
+
+      <!-- Campo para upload de múltiplas imagens de produtos -->
+      <label for="imgProdutos">Imagem Produtos:</label>
+      <input type="file" name="imgProdutos" id="imgProdutos" multiple />
+      <!-- 
+        <input type="file">: Campo para fazer upload de arquivos.
+        Atributos:
+          - name="imgProdutos": Nome do campo.
+          - id="imgProdutos": Identificador único.
+          - multiple: Permite o upload de múltiplos arquivos.
+      -->
+
+      <br /><br />
+
+      <!-- Campo de telefone -->
+      <label for="phone">Telefone:</label>
+      <input type="tel" name="phone" id="phone" minlength="11" maxlength="15" />
+      <!-- 
+        <input type="tel">: Campo para entrada de telefone, pode validar o formato correto de números de telefone.
+        Atributos:
+          - name="phone": Nome do campo.
+          - id="phone": Identificador único.
+          - minlength="11": Mínimo de 11 caracteres.
+          - maxlength="15": Máximo de 15 caracteres.
+      -->
+
+      <br /><br />
+
+      <!-- Campo numérico para o valor de um produto -->
+      <label for="valorProduto">Valor:</label>
+      <input
+        type="number"
+        name="valorProduto"
+        id="valorProduto"
+        min="0"
+        step="0.010"
+      />
+      <!-- 
+        <input type="number">: Campo numérico com suporte a valores decimais.
+        Atributos:
+          - name="valorProduto": Nome do campo.
+          - id="valorProduto": Identificador único.
+          - min="0": Valor mínimo permitido.
+          - step="0.010": Incremento em valores de 0.01.
+      -->
+
+      <br /><br />
+
+      <!-- Campo para escolher uma cor -->
+      <label for="cor_favorita">Cor favorita:</label>
+      <input type="color" name="cor_favorita" id="cor_favorita" />
+      <!-- 
+        <input type="color">: Campo para selecionar uma cor.
+        Atributos:
+          - name="cor_favorita": Nome do campo.
+          - id="cor_favorita": Identificador único.
+      -->
+
+      <br /><br />
+
+      <!-- Campos checkbox para esportes favoritos -->
+      <input type="checkbox" name="Basquete" id="Basquete" />
+      <label for="Basquete">Basquete</label>
+
+      <input type="checkbox" name="ping_pong" id="ping_pong" />
+      <label for="ping_pong">Ping Pong</label>
+      <!-- 
+        <input type="checkbox">: Permite marcar múltiplas opções.
+        Atributos:
+          - name="Basquete": Nome do campo para a opção Basquete.
+          - id="Basquete": Identificador único.
+          - name="ping_pong": Nome do campo para a opção Ping Pong.
+          - id="ping_pong": Identificador único.
+      -->
+
+      <br /><br />
+
+      <!-- Campos radio para seleção de sexo -->
+      <input type="radio" name="sexo" id="feminino" value="feminino" />
+      <label for="feminino">Feminino</label>
+
+      <input type="radio" name="sexo" id="masculino" value="masculino" />
+      <label for="masculino">Masculino</label>
+      <!-- 
+        <input type="radio">: Permite selecionar apenas uma das opções disponíveis.
+        Atributos:
+          - name="sexo": Nome do campo compartilhado entre os valores.
+          - id="feminino": Identificador único para a opção Feminino.
+          - value="feminino": Valor associado à opção Feminino.
+          - id="masculino": Identificador único para a opção Masculino.
+          - value="masculino": Valor associado à opção Masculino.
+      -->
+
+      <br /><br />
+
+      <!-- Menu de seleção de país -->
+      <label for="country">País:</label>
+      <select name="country" id="country">
+        <option value="Brasil">Brasil</option>
+        <option value="EUA">EUA</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Alemanha">Alemanha</option>
+      </select>
+      <!-- 
+        <select>: Menu de seleção de opções.
+        Atributos:
+          - name="country": Nome do campo.
+          - id="country": Identificador único.
+          - <option value="...">: Cada opção disponível no menu.
+      -->
+
+      <br /><br />
+
+      <!-- Área de texto para descrição -->
+      <label for="descricao">Descrição:</label>
+      <textarea
+        id="descricao"
+        name="descricao"
+        placeholder="Digite uma breve descrição sobre você!"
+        required
+      ></textarea>
+      <!-- 
+        <textarea>: Área de texto para várias linhas.
+        Atributos:
+          - id="descricao": Identificador único.
+          - name="descricao": Nome do campo.
+          - placeholder="Digite uma breve descrição sobre você!": Texto de dica dentro da caixa de texto.
+          - required: Campo obrigatório.
+      -->
+
+      <br /><br />
+
+      <fieldset>
+        <legend>Datas</legend>
+        <label for="data">Data: </label>
+        <input type="date" name="data" id="data" value="data" maxlength="" />
+      </fieldset>
+
+      <!-- Botão de envio do formulário -->
+      <input type="submit" value="Enviar Formulário" />
+      <!-- 
+        <input type="submit">: Botão para submeter o formulário.
+        Atributos:
+          - value="Enviar Formulário": Texto exibido no botão.
+      -->
+    </form>
+    <!-- Fim do formulário -->
+  </body>
+</html>
