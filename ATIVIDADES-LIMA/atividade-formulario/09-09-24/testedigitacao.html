@@ -7,32 +7,67 @@
   </head>
   <body>
     <form action="#" method="get">
-    <header><h1>Formulário de Cadastro</h1></header>
-    <fieldset>
+      <header><h1>Formulário de Cadastro</h1></header>
+      <fieldset>
         <legend>Dados Pessoais</legend>
         <!-- Nome -->
         <section>
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome">
+          <label for="nome">Nome: </label>
+          <input type="text" name="nome" id="nome" />
         </section>
 
-      <!-- Email -->
-      <section>
-        <label for="email">Email: </label>
-        <input type="email" name="email" id="nome">
-    </section>
-      
-      <!-- Senha -->
-      <section>
-        <label for="senha">Senha: </label>
-        <input type="password" name="senha" id="senha">
-      </section>
-      <!-- Telefone -->
-<section>
-    <label for="tel">Telefone: </label>
-    <input type="tel" name="tel" id="tel">
-</section>
+        <!-- Email -->
+        <section>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="nome" />
+        </section>
 
-    </fieldset>
+        <!-- Senha -->
+        <section>
+          <label for="senha">Senha: </label>
+          <input type="password" name="senha" id="senha" />
+        </section>
+
+        <!-- Telefone -->
+        <section>
+          <label for="tel">Telefone: </label>
+          <input type="tel" name="tel" id="tel" />
+        </section>
+
+        <!-- Data de nascimento -->
+        <section>
+          <label for="data">Data de nascimento: </label>
+          <input type="date" name="data" id="data" />
+        </section>
+
+        <!-- Sexo -->
+        <section>
+          <label for="sexo">Sexo: </label>
+          <select name="sexo" id="sexo">
+            <option value="Masc">Masculino</option>
+            <option value="Femi">Feminino</option>
+          </select>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>Localização</legend>
+        <!-- Gênero -->
+        <section>
+          <label for="city">Cidade: </label>
+
+          <input
+            type="radio"
+            name="city"
+            id="Nova Odessa"
+            value="Nova Odessa"
+          />
+          <label for="Nova Odessa">Nova Odessa</label>
+
+          <input type="radio" name="city" id="Sumare" value="Sumare" />
+          <label for="Sumare">Sumare</label>
+        </section>
+      </fieldset>
+    </form>
   </body>
 </html>
