@@ -1,0 +1,30 @@
+#menu {
+  background-color: black;
+}
+#menu a {
+  color: whitesmoke;
+}
+.home {
+  font-size: 18px;
+}
+#rodapeid {
+  background-color: darkgray;
+}
+.rodapecl {
+  height: 50px;
+}
+.rodapecl p {
+  color: aqua;
+}
+#container {
+  height: 500px;
+  width: 100%;
+  background-color: blueviolet;
+}
+#container p {
+  font-size: 20px;
+}
+.paysanduimg {
+  height: 50%;
+  width: 100%;
+}
