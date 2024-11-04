@@ -6,10 +6,6 @@
   text-decoration: none;
 }
 
-body {
-  background-color: darkgray;
-}
-
 .Cabeçalho {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -91,21 +87,20 @@ footer {
 footer ol h3 {
   color: #f44d4d;
 }
-main {
-  height: 100vh;
-  background-color: rgb(255, 255, 255);
-}
 
-.cards1 {
-  width: 500px;
-  height: 100px;
-  background-color: rgb(255, 0, 0);
-  align-items: center;
-  justify-content: center;
+.cards {
+  width: 40%;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid red;
+  border-radius: 20px;
 }
 .pagina {
+  height: 73vh;
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10%;
+  align-content: center;
 }
