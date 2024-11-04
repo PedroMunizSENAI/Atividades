@@ -1,0 +1,106 @@
+/* Codigo para limpar o css */
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+.Cabeçalho {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Cabeçalho nav a img {
+  width: 140px;
+  height: 100px;
+}
+
+.Cabeçalho nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+nav {
+  display: flex;
+}
+
+.Cabeçalho nav ul li a {
+  color: #fe4040;
+}
+
+header nav ul li a {
+  color: white;
+  margin-left: 30px;
+  justify-content: space-around;
+}
+
+/* Conteudo principal marketplace */
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 74vh;
+  flex-wrap: wrap;
+}
+div {
+  background-color: red;
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  flex-wrap: wrap;
+}
+.pe {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pe h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pe ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pe ul li {
+  margin-bottom: 5px;
+}
+
+.pe ul li a {
+  color: #ffffff;
+}
+
+.pe p {
+  margin: 5px 0;
+}
+
+.pe a {
+  color: #ffffff;
+}
+footer ol h3 {
+  color: #f44d4d;
+}
