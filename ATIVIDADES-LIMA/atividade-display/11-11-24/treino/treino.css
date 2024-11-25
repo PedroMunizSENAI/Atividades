@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: bisque;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  background-color: brown;
+  display: inline-block;
+}
+
+/* seleciona o terceiro filho da tag "card" */
+.card:nth-child(3) {
+  display: none;
+}
+
+.card h1 {
+  color: white;
+}
+
+span {
+  font-size: 40px;
+  background-color: red;
+  width: 300px;
+  height: 400px;
+}

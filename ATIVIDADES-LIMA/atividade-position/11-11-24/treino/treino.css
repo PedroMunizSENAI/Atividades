@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: bisque;
+}
+header {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container {
+  width: 1000px;
+  height: 100vh;
+  background-color: brown;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  background-color: aqua;
+  border-radius: 20px;
+
+  /* O elemento com position absolute respeita o elemento que está com position absolute
+  caso nenhum elemento tenha position absolute, o position relative se posicionará de acordo com o body */
+  position: relative;
+  bottom: 300;
+}

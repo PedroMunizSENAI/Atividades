@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+
+  height: 100vh;
+  background-color: bisque;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px #000;
+
+  transition: filter 5s ease, transform 0.7s ease;
+  /* transition: all 5s ease; */
+  filter: grayscale(100%);
+}
+
+.card:nth-child(1) {
+  background: url("https://lh3.googleusercontent.com/drive-storage/AJQWtBPScEwWHab9uYzdCTyUuD_PuBxwjeYKmVzi8mG8HBWFMsGJGvt6KmNJJ9dUIqgRGkPmhPuoIIKM6PvpZ276KsUbN1KsGlcA4oK-cm3hzwWR9FM=w1891-h932");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(2) {
+  background: url("https://lh3.googleusercontent.com/drive-storage/AJQWtBPwHkn-AjYttIWJe4rhCdAToaQF3Yz2UR6pi2-BLLWaPrMnstpLqSao-8FYFs7zr5SGkrcDsUvY_XTr59aBAyK7U9AsAeH6q7207ostHOVRv3w=w1891-h932");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(3) {
+  background: url("https://lh3.googleusercontent.com/drive-storage/AJQWtBMhkF_Z_MoR9lITEviIFceBk-X9inzyBW_MgmUN-YUsBdIq33C3cBeGhqD5Hz5U-FEHMxWrjYQRoavwd-YWU7gKQ8TkR85YCNDyAZINw3sDw58=w1891-h932");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* .card:hover:nth-child(1) {
+    transform: rotate(90deg);
+  }
+  
+  .card:hover:nth-child(2) {
+    transform: scale(1.2);
+  }
+  
+  .card:hover:nth-child(3) {
+    transform: translate(-50px, 80px);
+  } */
+
+.card:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
