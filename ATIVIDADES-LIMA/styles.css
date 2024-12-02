@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.carousel:hover .wrap {
+  animation-play-state: paused;
+  filter: grayscale(1);
+}
+
+.carousel .wrap:hover {
+  transition: 0.7s ease;
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+.wrap {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 100%;
+
+  animation: image 3s linear infinite;
+  animation-delay: var(--delay);
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel .wrap img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes image {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}

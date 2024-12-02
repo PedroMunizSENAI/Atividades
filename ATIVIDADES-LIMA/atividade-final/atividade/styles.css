@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+header ul li a {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.img {
+  width: 100%;
+  height: 730px;
+
+  background: url(../images/McGorila.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  filter: grayscale(100%);
+
+  position: relative;
+}
+
+.img h1 {
+  font-size: 85px;
+  color: whitesmoke;
+}
+
+.img h2 {
+  font-size: 45px;
+  color: whitesmoke;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.nextshow h2 {
+  margin-top: 150px;
+  margin-bottom: 40px;
+
+  font-size: 45px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.nextshow a {
+  color: #fff;
+  font-size: 30px;
+}
+
+.nextshow .nextshow_content {
+  display: flex;
+  width: 100%;
+}
+
+.nextshow .nextshow_content img {
+  padding: 30px;
+  width: 40%;
+  height: 100%;
+
+  filter: grayscale(100%);
+}
+
+.nextshow .nextshow_content div {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nextshow .nextshow_content div .links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nextshow .nextshow_content div a {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.nextshow .nextshow_content p {
+  color: #fff;
+  font-size: 30px;
+}
+
+.sobre {
+  width: 100%;
+  height: 200px;
+
+  margin-top: 150px;
+  margin-bottom: 40px;
+
+  background: url(../images/McGorila1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  filter: grayscale(100%);
+}
+
+.sobre h2 {
+  font-size: 45px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.bio p {
+  font-size: 30px;
+  padding: 30px;
+  color: whitesmoke;
+  text-align: center;
+}
