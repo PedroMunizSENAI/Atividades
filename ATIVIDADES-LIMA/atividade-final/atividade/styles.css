@@ -7,26 +7,36 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   background-color: black;
 }
 
 .menu {
   width: 100%;
   height: 100%;
-  display: flex;
+  padding-left: 30px;
 }
 
-header ul {
+.menu nav {
+  position: relative;
+}
+
+.menu nav ul i {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+}
+
+.menu nav ul {
   display: flex;
   flex-direction: row;
+
   gap: 10px;
+
+  color: whitesmoke;
+  font-size: 20px;
 }
 
-header ul li a {
+.menu ul li a {
   text-align: center;
   color: whitesmoke;
   font-size: 15px;
@@ -44,10 +54,19 @@ header ul li a {
   filter: grayscale(100%);
 
   position: relative;
+
+  transition: all 0.7s ease;
+}
+
+.img:hover {
+  background: url(../images/McGorila3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .img h1 {
-  font-size: 85px;
+  font-size: 120px;
   color: whitesmoke;
 }
 
@@ -60,18 +79,26 @@ header ul li a {
   right: 0;
 }
 
+.nextshow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .nextshow h2 {
   margin-top: 150px;
   margin-bottom: 40px;
+  padding-left: 30px;
 
   font-size: 45px;
   color: whitesmoke;
-  text-align: center;
+  text-align: left;
 }
 
 .nextshow a {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
+  transition: all 0.7s ease;
 }
 
 .nextshow .nextshow_content {
@@ -100,8 +127,9 @@ header ul li a {
 }
 
 .nextshow .nextshow_content div a {
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+  transition: all 0.7s ease;
 }
 
 .nextshow .nextshow_content p {
@@ -109,14 +137,41 @@ header ul li a {
   font-size: 30px;
 }
 
+.nextshow .nextshow_content div a:hover,
+.nextshow a:hover {
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
 .sobre {
   width: 100%;
-  height: 200px;
+}
 
+.sobre h2 {
   margin-top: 150px;
   margin-bottom: 40px;
+  padding-left: 30px;
 
-  background: url(../images/McGorila1.jpg);
+  font-size: 45px;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.sobre p {
+  font-size: 30px;
+  padding: 30px;
+  margin-bottom: 40px;
+
+  color: whitesmoke;
+  text-align: left;
+}
+
+.sobre_img {
+  width: 100%;
+  height: 400px;
+
+  background: url(../images/McGorila4.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -124,15 +179,170 @@ header ul li a {
   filter: grayscale(100%);
 }
 
-.sobre h2 {
+.sound {
+  width: 100%;
+  /* padding: 10px; */
+}
+
+.sound h2 {
+  margin-top: 150px;
+  margin-bottom: 40px;
+  padding-left: 30px;
+
+  font-size: 45px;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.cards {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.card:nth-child(1) {
+  background: url(../images/MeuGato.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  filter: grayscale(100%);
+}
+
+.card:nth-child(2) {
+  background: url(../images/Cheiodesal.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  filter: grayscale(100%);
+}
+
+.card:nth-child(3) {
+  background: url(../images/OsNovinho.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  filter: grayscale(100%);
+}
+
+.card_name {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card_name a {
+  font-size: 20px;
+  width: 250px;
+  color: whitesmoke;
+  text-align: center;
+
+  border: 1px;
+  border-radius: 20px;
+}
+
+.contato {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato h2 {
+  margin-top: 150px;
+  margin-bottom: 40px;
+
   font-size: 45px;
   color: whitesmoke;
   text-align: center;
 }
 
-.bio p {
-  font-size: 30px;
-  padding: 30px;
+.contato form {
   color: whitesmoke;
-  text-align: center;
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.contato form .nomeEmail {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contato form .nomeEmail div {
+  width: 49%;
+}
+
+.contato form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contato form div input,
+.contato form div textarea {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  transition: 0.3s ease;
+  color: #ffffff;
+}
+
+.contato form .btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+
+  margin-top: 150px;
+  margin-bottom: 40px;
+  padding-left: 30px;
+
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+  flex-wrap: wrap;
+}
+
+.footer ol h3 {
+  color: whitesmoke;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footer ol i {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.footer a {
+  color: #ffffff;
 }
