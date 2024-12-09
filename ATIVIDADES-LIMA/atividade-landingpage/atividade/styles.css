@@ -11,8 +11,6 @@ body {
 }
 
 .menu {
-  width: 100%;
-  height: 100%;
   padding-left: 30px;
 }
 
@@ -34,10 +32,11 @@ body {
 
   color: whitesmoke;
   font-size: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu ul li a {
-  text-align: center;
   color: whitesmoke;
   font-size: 15px;
 }
@@ -81,8 +80,6 @@ body {
 
 .nextshow {
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .nextshow h2 {
@@ -90,15 +87,9 @@ body {
   margin-bottom: 40px;
   padding-left: 30px;
 
-  font-size: 45px;
+  font-size: 50px;
   color: whitesmoke;
   text-align: left;
-}
-
-.nextshow a {
-  color: #fff;
-  font-size: 20px;
-  transition: all 0.7s ease;
 }
 
 .nextshow .nextshow_content {
@@ -116,32 +107,37 @@ body {
 
 .nextshow .nextshow_content div {
   padding: 30px;
-  display: flex;
-  flex-direction: column;
 }
 
 .nextshow .nextshow_content div .links {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+
+  justify-content: space-around;
 }
 
-.nextshow .nextshow_content div a {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+.nextshow .nextshow_content div .links a {
+  color: #fff;
+  font-size: 23px;
   transition: all 0.7s ease;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
 }
 
 .nextshow .nextshow_content p {
   color: #fff;
   font-size: 30px;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nextshow .nextshow_content div a:hover,
 .nextshow a:hover {
-  border: 2px solid white;
-  border-radius: 10px;
-  font-size: 30px;
+  transform: scale(1.5);
+  border: 2px solid whitesmoke;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
 }
 
 .sobre {
@@ -153,7 +149,7 @@ body {
   margin-bottom: 40px;
   padding-left: 30px;
 
-  font-size: 45px;
+  font-size: 50px;
   color: whitesmoke;
   text-align: left;
 }
@@ -165,6 +161,8 @@ body {
 
   color: whitesmoke;
   text-align: left;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .sobre_img {
@@ -181,7 +179,6 @@ body {
 
 .sound {
   width: 100%;
-  /* padding: 10px; */
 }
 
 .sound h2 {
@@ -189,25 +186,29 @@ body {
   margin-bottom: 40px;
   padding-left: 30px;
 
-  font-size: 45px;
+  font-size: 50px;
   color: whitesmoke;
   text-align: left;
 }
 
 .cards {
-  width: 100%;
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
   flex-wrap: wrap;
+
+  position: relative;
 }
 
-.card {
+.cards .card {
   height: 300px;
   width: 250px;
   border-radius: 20px;
   border: 1px solid white;
+
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card:nth-child(1) {
@@ -237,30 +238,32 @@ body {
   filter: grayscale(100%);
 }
 
-.card_name {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.card_name a {
+.card a {
   font-size: 20px;
-  width: 250px;
   color: whitesmoke;
   text-align: center;
 
-  border: 1px;
-  border-radius: 20px;
+  margin-top: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: all 0.7s ease;
+
+  position: absolute;
+  bottom: -60px;
+}
+
+.card a:hover {
+  transform: scale(1.5);
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
 }
 
 .contato {
   width: 100%;
   flex-direction: column;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -268,7 +271,7 @@ body {
   margin-top: 150px;
   margin-bottom: 40px;
 
-  font-size: 45px;
+  font-size: 50px;
   color: whitesmoke;
   text-align: center;
 }
@@ -281,7 +284,6 @@ body {
 }
 
 .contato form .nomeEmail {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -328,7 +330,6 @@ body {
   display: flex;
   justify-content: space-around;
   background-color: transparent;
-  flex-wrap: wrap;
 }
 
 .footer ol h3 {
@@ -338,6 +339,10 @@ body {
   font-weight: bold;
 }
 
+.footer ol li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .footer ol i {
   color: whitesmoke;
   font-size: 20px;
@@ -345,4 +350,10 @@ body {
 
 .footer a {
   color: #ffffff;
+}
+
+@media (max-width: 615px) {
+  .img h1 {
+    font-size: 100px;
+  }
 }
